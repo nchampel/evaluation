@@ -75,7 +75,7 @@ header nav ul li {
   border: none;
   padding: 10px 20px;
 }
-#wrap {
+/*#wrap {
     display: flex;
 }
 #wrap:target #open,
@@ -94,4 +94,4 @@ header nav ul li {
 #open,
 #close {
   display: block;
-}
+}*/
