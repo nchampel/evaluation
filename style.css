@@ -7,6 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   border-top: #4a3174 solid 8px;
+  background: #FAFAFA;
 }
 #container {
   max-width: 1000px;
@@ -42,6 +43,11 @@ body {
   header a svg {
     display: none;
   }
+  
+  #recherche {
+    display: flex;
+    justify-content: space-between;
+}
 }
 /*header, header nav ul {
     display: flex;
@@ -75,23 +81,113 @@ header nav ul li {
   border: none;
   padding: 10px 20px;
 }
-/*#wrap {
+
+#recherche {
+    margin-top: 200px;
+}
+.rechercher { 
+    position: relative;
+    width: 230px;
+}
+#recherche input,
+.rechercher button[type="submit"] {
+    font-size: 16px;
+}
+#recherche input {
+    top: 20px;
+    padding: 10px 10px;
+    color: #9D9D9D;
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+    position: absolute; 
+    left: 0;
+}
+.rechercher button[type="submit"] { 
+    position: absolute;
+    color: #fff;
+    top: 20px;
+    left: 180px;
+    padding: 9px 10px;
+    background: #4A3174;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#logo-block {
     display: flex;
 }
-#wrap:target #open,
-#wrap:not(:target) #close {
-  display: none;
+#recherche h2 {
+    color: #4A3174;
+    font-size: 48px;
 }
-#wrap:target #open {
-  display: none;
+#recherche p {
+    color: #7A7A7A;
 }
-#wrap:not(:target) {
-  transform: translate3d(-335px, 0, 0);
+
+#recommendations {
+    margin-top: 200px;
 }
-#wrap:target {
-  transform: translate3d(0, 0, 0);
+#recommendations h3 {
+    color: #4A3174;
+    font-size: 36px;
+    padding-left: 20px;
 }
-#open,
-#close {
-  display: block;
-}*/
+.book-block {
+    display: flex;
+}
+#articles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+#recommendations article {
+    width: 293px;
+    height: 468px;
+    background: #ffffff;
+    padding: 10px;
+}
+#recommendations h4 {
+    color: #222222;
+}
+#recommendations p {
+    color: #7A7A7A;
+}
+#price {
+    color: #4A3174;
+}
+
+#selection h3 {
+    color: #4A3174;
+    font-size: 36px;
+    padding-left: 20px;
+}
+#selection h3 span {
+    color: #E9B708;
+}
+#selection img {
+    width: 81px;
+}
+#selection article {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background: #ffffff;
+}
+#selection .description {
+    width: 600px;
+    color: #999999;
+}
+#articles-selection {
+    margin-top: 140px;
+}
+#selection article:hover {
+    box-shadow: 2px 2px 2px #444444, -2px -2px 2px #444444;
+}
+#selection article:hover .description {
+    color: #333333;
+}
+#selection article:hover>p {
+    color: #E9B708;
+    font-size: 36px;
+}
