@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
 * {
   margin: 0;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
 body {
   font-family: "Roboto", sans-serif;
@@ -159,7 +159,7 @@ header nav ul li {
 #recommendations p {
     color: #7A7A7A;
 }
-#price {
+.price {
     color: #4A3174;
 }
 
