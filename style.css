@@ -31,6 +31,12 @@ body {
   #inscription {
     margin-top: 20px;
   }
+  #articles article:nth-child(3) {
+    display: none;
+  }
+  #ul-block ul:nth-child(3){
+    display: none;
+  }
 }
 @media (min-width: 800px) {
   header,
@@ -175,7 +181,7 @@ header nav ul li {
     background: #ffffff;
 }
 #selection .description {
-    width: 600px;
+    max-width: 600px;
     color: #999999;
 }
 #articles-selection {
@@ -190,4 +196,37 @@ header nav ul li {
 #selection article:hover>p {
     color: #E9B708;
     font-size: 36px;
+}
+
+footer {
+  background: #4a3174;
+  color: #ffffff;
+}
+#footer-block {
+  display: flex;
+  padding-top: 20px;
+}
+footer h3 {
+  font-size: 32px;
+  margin-left: 20px;
+}
+footer img {
+  margin-left: 110px;
+}
+#ul-block {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+footer li {
+  list-style-type: none;
+  padding: 10px;
+}
+footer ul {
+  padding: 0;
+}
+footer li:hover {
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
