@@ -142,6 +142,11 @@ header nav ul li {
 .book-block {
   display: flex;
 }
+/*#recommendations article {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}*/
 #articles {
   display: flex;
   justify-content: space-between;
