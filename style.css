@@ -7,7 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   border-top: #4a3174 solid 8px;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 #container {
   max-width: 1000px;
@@ -34,7 +34,7 @@ body {
   #articles article:nth-child(3) {
     display: none;
   }
-  #ul-block ul:nth-child(3){
+  #ul-block ul:nth-child(3) {
     display: none;
   }
 }
@@ -49,11 +49,11 @@ body {
   header a svg {
     display: none;
   }
-  
+
   #recherche {
     display: flex;
     justify-content: space-between;
-}
+  }
 }
 /*header, header nav ul {
     display: flex;
@@ -89,113 +89,113 @@ header nav ul li {
 }
 
 #recherche {
-    margin-top: 200px;
+  margin-top: 200px;
 }
-.rechercher { 
-    position: relative;
-    width: 230px;
+.rechercher {
+  position: relative;
+  width: 230px;
 }
 #recherche input,
 .rechercher button[type="submit"] {
-    font-size: 16px;
+  font-size: 16px;
 }
 #recherche input {
-    top: 20px;
-    padding: 10px 10px;
-    color: #9D9D9D;
-    background: #fff;
-    border: none;
-    border-radius: 3px;
-    position: absolute; 
-    left: 0;
+  top: 20px;
+  padding: 10px 10px;
+  color: #9d9d9d;
+  background: #fff;
+  border: none;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
 }
-.rechercher button[type="submit"] { 
-    position: absolute;
-    color: #fff;
-    top: 20px;
-    left: 180px;
-    padding: 9px 10px;
-    background: #4A3174;
-    border: none;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+.rechercher button[type="submit"] {
+  position: absolute;
+  color: #fff;
+  top: 20px;
+  left: 180px;
+  padding: 9px 10px;
+  background: #4a3174;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 #logo-block {
-    display: flex;
+  display: flex;
 }
 #recherche h2 {
-    color: #4A3174;
-    font-size: 48px;
+  color: #4a3174;
+  font-size: 48px;
 }
 #recherche p {
-    color: #7A7A7A;
+  color: #7a7a7a;
 }
 
 #recommendations {
-    margin-top: 200px;
+  margin-top: 200px;
 }
 #recommendations h3 {
-    color: #4A3174;
-    font-size: 36px;
-    padding-left: 20px;
+  color: #4a3174;
+  font-size: 36px;
+  padding-left: 20px;
 }
 .book-block {
-    display: flex;
+  display: flex;
 }
 #articles {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 #recommendations article {
-    width: 293px;
-    height: 468px;
-    background: #ffffff;
-    padding: 10px;
+  width: 293px;
+  height: 468px;
+  background: #ffffff;
+  padding: 10px;
 }
 #recommendations h4 {
-    color: #222222;
+  color: #222222;
 }
 #recommendations p {
-    color: #7A7A7A;
+  color: #7a7a7a;
 }
 .price {
-    color: #4A3174;
+  color: #4a3174;
 }
 
 #selection h3 {
-    color: #4A3174;
-    font-size: 36px;
-    padding-left: 20px;
+  color: #4a3174;
+  font-size: 36px;
+  padding-left: 20px;
 }
 #selection h3 span {
-    color: #E9B708;
+  color: #e9b708;
 }
 #selection img {
-    width: 81px;
+  width: 81px;
 }
 #selection article {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background: #ffffff;
 }
 #selection .description {
-    max-width: 600px;
-    color: #999999;
+  max-width: 600px;
+  color: #999999;
 }
 #articles-selection {
-    margin-top: 140px;
+  margin-top: 140px;
 }
 #selection article:hover {
-    box-shadow: 2px 2px 2px #444444, -2px -2px 2px #444444;
+  box-shadow: 2px 2px 2px #444444, -2px -2px 2px #444444;
 }
 #selection article:hover .description {
-    color: #333333;
+  color: #333333;
 }
-#selection article:hover>p {
-    color: #E9B708;
-    font-size: 36px;
+#selection article:hover > p {
+  color: #e9b708;
+  font-size: 36px;
 }
 
 footer {
