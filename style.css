@@ -178,10 +178,13 @@ header nav ul li {
 }
 #selection img {
   width: 81px;
+  max-height: 100%;
+  align-self: center;
 }
 #selection article {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 20px;
   background: #ffffff;
 }
@@ -206,6 +209,7 @@ header nav ul li {
 footer {
   background: #4a3174;
   color: #ffffff;
+  margin-top: 100px;
 }
 #footer-block {
   display: flex;
