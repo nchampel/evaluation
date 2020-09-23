@@ -1,3 +1,4 @@
 J'ai commencé à implémenter la partie responsive mais je me suis arrêté à la création du menu hamburger.
 Le site est presque fini, partie html css. Il manque le footer et arranger l'espacement entre l'image et le texte dans les recommandations.
 J'en suis à l'étape 4. L'api est fonctionnelle, elle retourne bien les résultats, et j'affiche les livres depuis l'api dans recommandations, ainsi que les livres avec le prix maximum. La recherche avec le champ recherche est fonctionnel, étape 4 finie.
+Etape 5 finie, on se sert d'un fichier en local pour générer un serveur php qui fournit les informations des livres au démarrage de la page, et puis après on peut lancer la recherche qui utilise l'api google.

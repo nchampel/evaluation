@@ -1,4 +1,4 @@
-let books = [
+/*let books = [
   {
     titre: "16 lunes",
     auteur: "Kami Garcia",
@@ -28,7 +28,7 @@ let books = [
     image: "https://via.placeholder.com/150",
     description: "4 blablabla",
   },
-];
+];*/
 /**
  * affiche 3 livres au hasard
  *
@@ -46,7 +46,7 @@ function afficheRecommandations() {
     results.push(books[draws[i]]);
   }
   let divArticles = document.getElementById("articles");
-  divArticles.innerHTML = "";
+  divArticles.innerText = "";
   for (j = 0; j < results.length; j++) {
     let article = document.createElement("article");
     let image = document.createElement("img");
@@ -98,6 +98,7 @@ function afficheLivres(prixMax) {
     (fullBooks) => fullBooks.saleInfo.listPrice.amount < prixMax
   );
   let divArticles = document.getElementById("articles-selection");
+  divArticles.innerText = "";
   for (j = 0; j < results.length; j++) {
     let article = document.createElement("article");
     let image = document.createElement("img");
@@ -157,21 +158,36 @@ function RechercheLivres(recherche) {
   fetch(url)
     .then((response) =>
       response.json().then((data) => {
-      books = data.items;
-      //console.log(books);
-      afficheRecommandations();
-      afficheLivres(28);
+        books = data.items;
+        //console.log(books);
+        afficheRecommandations();
+        afficheLivres(28);
       })
     )
     .catch(function (error) {
       console.log("Il y a eu un problème avec l'opération fetch: ", error);
     });
 }
-//RechercheLivres("ecmascript");
+
+function menuHamburger() {
+  if (document.getElementById("navbar").style.display === "none") {
+    document.getElementById("navbar").style.display = "block";
+    document.getElementById("connexion").style.display = "block";
+    document.getElementById("inscription").style.display = "block";
+  } else {
+    document.getElementById("navbar").style.display = "none";
+    document.getElementById("connexion").style.display = "none";
+    document.getElementById("inscription").style.display = "none";
+  }
+  
+}
+
 let searchBar = document.getElementById("search");
-//console.log(searchBar.value);
+//console.log(books);
 let boutonGo = document.getElementById("submission");
 boutonGo.addEventListener("click", function (event) {
   event.preventDefault();
   RechercheLivres(searchBar.value);
 });
+afficheRecommandations();
+afficheLivres(40);
