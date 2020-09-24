@@ -168,7 +168,11 @@ function RechercheLivres(recherche) {
       console.log("Il y a eu un problème avec l'opération fetch: ", error);
     });
 }
-
+/**
+ * fait disparaître et apparaître au clic sur un bouton le menu hamburger
+ * 
+ * @return void
+ */
 function menuHamburger() {
   if (document.getElementById("navbar").style.display === "none") {
     document.getElementById("navbar").style.display = "block";
