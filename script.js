@@ -168,6 +168,29 @@ function RechercheLivres(recherche) {
       console.log("Il y a eu un problème avec l'opération fetch: ", error);
     });
 }
+
+/**
+ * Affiche les livres à partir du fichier json et du serveur en php
+ * 
+ * @return void
+ */
+function premierAffichage() {
+  let url = "http://localhost:8000/api.php";
+  
+  fetch(url)
+    .then((response) =>
+      response.json().then((data) => {
+        books = data.items;
+        //console.log(books);
+        afficheRecommandations();
+        afficheLivres(28);
+      })
+    )
+    .catch(function (error) {
+      console.log("Il y a eu un problème avec l'opération fetch: ", error);
+    });
+}
+
 /**
  * fait disparaître et apparaître au clic sur un bouton le menu hamburger
  * 
@@ -193,5 +216,6 @@ boutonGo.addEventListener("click", function (event) {
   event.preventDefault();
   RechercheLivres(searchBar.value);
 });
-afficheRecommandations();
-afficheLivres(40);
+/*afficheRecommandations();
+afficheLivres(40);*/
+premierAffichage();
